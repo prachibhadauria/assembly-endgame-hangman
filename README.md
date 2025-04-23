@@ -1,4 +1,3 @@
-```markdown
 # Assembly: Endgame
 
 **A fun and educational hangman-style game built with React.**  
