@@ -3,6 +3,7 @@ import { clsx } from "clsx"
 import { languages } from "./languages"
 import { getFarewellText, getRandomWord } from "./utils"
 import Confetti from "react-confetti"
+import { Analytics } from "@vercel/analytics/react"
 
 export default function AssemblyEndgame() {
     // State values
@@ -183,7 +184,8 @@ export default function AssemblyEndgame() {
                     className="new-game"
                     onClick={startNewGame}
                 >New Game</button>}
-            <footer className="footer">Prachi Bhadauria</footer>    
+            <footer className="footer">Prachi Bhadauria</footer>  
+            <Analytics/>  
         </main>
     )
 }
